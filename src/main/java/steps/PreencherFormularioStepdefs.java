@@ -1,10 +1,23 @@
 package steps;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class CriarFormularioStepdefs {
+public class PreencherFormularioStepdefs {
+    @Given("^que o usuário acessou a tela adicionar formulario$")
+    public void queOUsuárioAcessouATelaAdicionarFormulario() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^seleciona a opção de adicionar formulario$")
+    public void selecionaAOpçãoDeAdicionarFormulario() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
     @When("^verifica a exibição do campo Nome do Formulario$")
     public void verificaAExibiçãoDoCampoNomeDoFormulario() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
@@ -113,8 +126,38 @@ public class CriarFormularioStepdefs {
         throw new PendingException();
     }
 
-    @When("^Preencher o campo Codigo de Usuario Area Comercial$")
-    public void preencherOCampoCodigoDeUsuarioAreaComercial() throws Throwable {
+    @When("^inserir o Texto$")
+    public void inserirOTexto() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^pressiona o botão Salvar$")
+    public void pressionaOBotãoSalvar() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^inserir o Checkbox$")
+    public void inserirOCheckbox() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^inserir o Listbox$")
+    public void inserirOListbox() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^inserir o Grouped$")
+    public void inserirOGrouped() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^inserir o List Text$")
+    public void inserirOListText() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }

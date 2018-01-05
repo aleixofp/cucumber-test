@@ -6,6 +6,6 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/main/resources/features", tags="@CriarFormularioTest", glue="steps", snippets= SnippetType.CAMELCASE)
+@CucumberOptions(features="src/main/resources/features/criarformulario.feature", glue= "steps", tags="@CriarFormularioTest", snippets= SnippetType.CAMELCASE)
 public class CriarFormularioTest {
 }

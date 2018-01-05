@@ -1,33 +1,16 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import model.Botao;
-import model.Componente;
-import model.Formulario;
-
-import static org.junit.Assert.assertEquals;
 
 public class UploadStepdefs {
-
-    private Formulario formulario;
-
     @Given("^que o usuário acessou a tela preencher formulario$")
     public void queOUsuárioAcessouATelaPreencherFormulario() throws Throwable {
-        this.formulario = new Formulario();
-        this.formulario.init();
-
-        this.formulario.addComponentList(new Botao("adicionar", "Adicionar"));
     }
 
     @When("^seleciona a opção de adicionar formulario$")
     public void selecionaAOpçãoDeAdicionarFormulario() throws Throwable {
-        for(Componente c: this.formulario.getComponentList()){
-            if (c.getId().equalsIgnoreCase("adicionar"))
-                ((Botao)c).click();
-        }
     }
 
     @When("^selecionar a opção de Upload de Imagens$")
@@ -105,4 +88,5 @@ public class UploadStepdefs {
     @Then("^verifica que as imagens estão anexadas e tipificadas$")
     public void verificaQueAsImagensEstãoAnexadasETipificadas() throws Throwable {
     }
+
 }
